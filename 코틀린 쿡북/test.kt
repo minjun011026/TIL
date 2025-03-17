@@ -1,6 +1,9 @@
-import kotlin.math.pow
-
+data class tmp(
+    val d : Int,
+    var s : Int
+)
 
 fun main() {
-    println(25.inv())
+    val a = tmp(1,2)
+    val b = a.component2()
 }
