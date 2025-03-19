@@ -1,21 +1,6 @@
-data class Tmp(
-    val name : String,
-    val ss : Int
-)
+fun sum(vararg num : Int) = num.reduce{ acc,n -> acc+ 3 * n}
+
 
 fun main() {
-    for (n in 1..10) {
-        val x = when (n % 3) {
-            0 -> "$n % 3 == 0"
-            1 -> "$n % 3 == 1"
-            2 -> "$n % 3 == 2"
-            else -> throw Exception("나올 수가 없는디")
-        }
-    }
-    val tmp = throw Exception("1")
-}
-fun ss(): Nothing = throw Exception("1")
-
-fun sss() {
-    throw Exception("@")
+    sum(1,2,3)
 }
